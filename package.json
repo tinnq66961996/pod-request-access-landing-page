@@ -1,0 +1,14 @@
+{
+    "name": "starter-code",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "compile:sass": "sass sass/main.scss src/style.css -w"
+    },
+    "author": "Tin Nguyen",
+    "license": "ISC",
+    "description": "",
+    "devDependencies": {
+        "sass": "^1.77.6"
+    }
+}

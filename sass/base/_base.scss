@@ -1,0 +1,45 @@
+@use '../abstract/variables' as variables;
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Chivo', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: variables.$color-black;
+    z-index: 1;
+    overflow: scroll;
+    &__logo {
+        max-width: 13.5rem;
+        max-height: 5.6rem;
+    }
+    &__btn--request {
+        cursor: pointer;
+        &:hover {
+            background-color: #b3ffe2;
+        }
+    }
+}
+
+#error {
+    position: absolute;
+    color: #fb3e3e;
+    padding-left: 3rem;
+    top: 68rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}

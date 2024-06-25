@@ -1,0 +1,31 @@
+@use '../abstract/mixins' as mixins;
+
+.container__image--mobile {
+    position: absolute;
+    display: none;
+    @include mixins.breakpoint(mobile) {
+        top: 0;
+        display: block;
+        opacity: 20%;
+        z-index: 0;
+    }
+}
+.container__image--tablet {
+    position: absolute;
+    display: none;
+    @include mixins.breakpoint(tablet) {
+        display: block;
+        z-index: 0;
+        right: 0;
+        top: 0;
+    }
+}
+.container__image--desktop {
+    position: absolute;
+    z-index: 0;
+    display: none;
+    @include mixins.breakpoint(desktop) {
+        right: 0;
+        display: block;
+    }
+}

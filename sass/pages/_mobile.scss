@@ -1,0 +1,80 @@
+@use '../abstract/mixins' as mixins;
+@use '../abstract/variables' as variables;
+@include mixins.breakpoint(mobile) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding: 4rem 3rem;
+        align-items: center;
+        text-align: center;
+        gap: 6rem;
+        &__information {
+            display: flex;
+            flex-direction: column;
+            gap: 1.6rem;
+            &--group {
+                display: flex;
+                flex-direction: column;
+                gap: 5rem;
+            }
+        }
+        &__icons {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            &--spotify {
+                width: 5.6rem;
+                height: 1.7rem;
+            }
+            &--apple {
+                width: 4.5rem;
+                height: 1.7rem;
+            }
+            &--google {
+                width: 7.3rem;
+                height: 1.1rem;
+            }
+            &--pocket {
+                width: 7.7rem;
+                height: 1.5rem;
+            }
+        }
+        &__btn {
+            display: flex;
+            flex-direction: column;
+            gap: 1.6rem;
+            &--email {
+                width: 32.7rem;
+                height: 4.6rem;
+                border: none;
+                border-radius: 2.8rem;
+                background-color: variables.$color-neutral-grey;
+                font-size: 1.4rem;
+                font-weight: bold;
+                line-height: 2.8rem;
+                color: variables.$color-white;
+                align-items: start;
+                text-align: start;
+                padding: 0 3rem;
+                opacity: 0.5;
+            }
+            &--request {
+                width: 32.7rem;
+                height: 4.6rem;
+                border: none;
+                border-radius: 2.8rem;
+                background-color: variables.$color-primary-green;
+                font-size: 1.4rem;
+                font-weight: bold;
+                line-height: 2.8rem;
+                color: variables.$color-black;
+                align-items: start;
+                text-align: start;
+                padding: 0 3rem;
+            }
+        }
+        &__pattern {
+            display: none;
+        }
+    }
+}

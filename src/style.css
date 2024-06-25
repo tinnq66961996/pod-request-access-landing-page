@@ -1,0 +1,414 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Chivo", sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #121725;
+  z-index: 1;
+  overflow: scroll;
+}
+.container__logo {
+  max-width: 13.5rem;
+  max-height: 5.6rem;
+}
+.container__btn--request {
+  cursor: pointer;
+}
+.container__btn--request:hover {
+  background-color: #b3ffe2;
+}
+
+#error {
+  position: absolute;
+  color: #fb3e3e;
+  padding-left: 3rem;
+  top: 68rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.container__information--heading {
+  color: #54e6af;
+}
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .container__information--heading {
+    font-size: 2.6rem;
+    font-weight: lighter;
+    line-height: 3.8rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .container__information--heading {
+    font-size: 4.8rem;
+    font-weight: lighter;
+    line-height: 5.6rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container__information--heading {
+    font-size: 5.2rem;
+    font-weight: lighter;
+    line-height: 6.2rem;
+  }
+}
+
+.container__information--heading2 {
+  color: #ffffff;
+}
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .container__information--heading2 {
+    font-size: 2.6rem;
+    font-weight: lighter;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .container__information--heading2 {
+    font-size: 4.8rem;
+    font-weight: lighter;
+    line-height: 5.6rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container__information--heading2 {
+    font-size: 5.2rem;
+    font-weight: lighter;
+    line-height: 6.2rem;
+  }
+}
+
+.container__information--paragraph {
+  color: #5a668a;
+}
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .container__information--paragraph {
+    font-size: 1.5rem;
+    font-weight: lighter;
+    line-height: 2.5rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .container__information--paragraph {
+    font-size: 1.8rem;
+    font-weight: lighter;
+    line-height: 2.8rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container__information--paragraph {
+    font-size: 1.8rem;
+    font-weight: lighter;
+    line-height: 2.8rem;
+  }
+}
+
+.container__image--mobile {
+  position: absolute;
+  display: none;
+}
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .container__image--mobile {
+    top: 0;
+    display: block;
+    opacity: 20%;
+    z-index: 0;
+  }
+}
+
+.container__image--tablet {
+  position: absolute;
+  display: none;
+}
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .container__image--tablet {
+    display: block;
+    z-index: 0;
+    right: 0;
+    top: 0;
+  }
+}
+
+.container__image--desktop {
+  position: absolute;
+  z-index: 0;
+  display: none;
+}
+@media screen and (min-width: 1440px) {
+  .container__image--desktop {
+    right: 0;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 10rem 15rem;
+    gap: 8rem;
+  }
+  .container__information {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+  .container__information--group {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    background-color: #121725;
+    width: 63.5rem;
+    height: 50.9rem;
+    z-index: 1;
+    padding-top: 10rem;
+    padding-right: 1rem;
+  }
+  .container__icons {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    order: 2;
+  }
+  .container__icons--spotify {
+    width: 9.6rem;
+    height: 2.9rem;
+  }
+  .container__icons--apple {
+    width: 7.8rem;
+    height: 2.9rem;
+  }
+  .container__icons--google {
+    width: 12.5rem;
+    height: 1.8rem;
+  }
+  .container__icons--pocket {
+    width: 12.9rem;
+    height: 2.6rem;
+  }
+  .container__btn {
+    display: flex;
+    gap: 1.6rem;
+    position: relative;
+  }
+  .container__btn--email {
+    width: 42.7rem;
+    height: 5.6rem;
+    border: none;
+    border-radius: 2.8rem;
+    background-color: #2c344b;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 2.8rem;
+    color: #ffffff;
+    align-items: start;
+    text-align: start;
+    padding: 0 3rem;
+    opacity: 0.5;
+  }
+  .container__btn--request {
+    position: absolute;
+    width: 16.2rem;
+    height: 4.6rem;
+    border: none;
+    border-radius: 2.8rem;
+    background-color: #54e6af;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 2.8rem;
+    color: #121725;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+    right: 20.5rem;
+  }
+  .container__pattern {
+    position: absolute;
+    width: 23.2rem;
+    height: 10.4rem;
+    right: 0rem;
+    top: 69rem;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 3rem;
+    align-items: center;
+    text-align: center;
+    gap: 6rem;
+  }
+  .container__information {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+  .container__information--group {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .container__icons {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+  .container__icons--spotify {
+    width: 5.6rem;
+    height: 1.7rem;
+  }
+  .container__icons--apple {
+    width: 4.5rem;
+    height: 1.7rem;
+  }
+  .container__icons--google {
+    width: 7.3rem;
+    height: 1.1rem;
+  }
+  .container__icons--pocket {
+    width: 7.7rem;
+    height: 1.5rem;
+  }
+  .container__btn {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+  .container__btn--email {
+    width: 32.7rem;
+    height: 4.6rem;
+    border: none;
+    border-radius: 2.8rem;
+    background-color: #2c344b;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 2.8rem;
+    color: #ffffff;
+    align-items: start;
+    text-align: start;
+    padding: 0 3rem;
+    opacity: 0.5;
+  }
+  .container__btn--request {
+    width: 32.7rem;
+    height: 4.6rem;
+    border: none;
+    border-radius: 2.8rem;
+    background-color: #54e6af;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 2.8rem;
+    color: #121725;
+    align-items: start;
+    text-align: start;
+    padding: 0 3rem;
+  }
+  .container__pattern {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    gap: 17rem;
+  }
+  .container__information {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+  .container__information--group {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    background-color: #121725;
+    width: 63.5rem;
+    height: 50.9rem;
+    z-index: 1;
+    padding-top: 10rem;
+    padding-right: 1rem;
+  }
+  .container__icons {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    order: 2;
+  }
+  .container__icons--spotify {
+    width: 9.6rem;
+    height: 2.9rem;
+  }
+  .container__icons--apple {
+    width: 7.8rem;
+    height: 2.9rem;
+  }
+  .container__icons--google {
+    width: 12.5rem;
+    height: 1.8rem;
+  }
+  .container__icons--pocket {
+    width: 12.9rem;
+    height: 2.6rem;
+  }
+  .container__btn {
+    display: flex;
+    gap: 1.6rem;
+    position: relative;
+  }
+  .container__btn--email {
+    width: 42.7rem;
+    height: 5.6rem;
+    border: none;
+    border-radius: 2.8rem;
+    background-color: #2c344b;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 2.8rem;
+    color: #ffffff;
+    align-items: start;
+    text-align: start;
+    padding: 0 3rem;
+    opacity: 0.5;
+  }
+  .container__btn--request {
+    position: absolute;
+    width: 16.2rem;
+    height: 4.6rem;
+    border: none;
+    border-radius: 2.8rem;
+    background-color: #54e6af;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 2.8rem;
+    color: #121725;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+    right: 20.5rem;
+  }
+  .container__pattern {
+    position: absolute;
+    width: 23.2rem;
+    height: 10.4rem;
+    bottom: 0rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

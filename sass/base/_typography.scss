@@ -1,0 +1,57 @@
+@use '../abstract/mixins' as mixins;
+@use '../abstract/variables' as variables;
+
+.container__information--heading {
+    color: variables.$color-primary-green;
+    @include mixins.breakpoint(mobile) {
+        font-size: 2.6rem;
+        font-weight: lighter;
+        line-height: 3.8rem;
+    }
+    @include mixins.breakpoint(tablet) {
+        font-size: 4.8rem;
+        font-weight: lighter;
+        line-height: 5.6rem;
+    }
+    @include mixins.breakpoint(desktop) {
+        font-size: 5.2rem;
+        font-weight: lighter;
+        line-height: 6.2rem;
+    }
+}
+
+.container__information--heading2 {
+    color: variables.$color-white;
+    @include mixins.breakpoint(mobile) {
+        font-size: 2.6rem;
+        font-weight: lighter;
+    }
+    @include mixins.breakpoint(tablet) {
+        font-size: 4.8rem;
+        font-weight: lighter;
+        line-height: 5.6rem;
+    }
+    @include mixins.breakpoint(desktop) {
+        font-size: 5.2rem;
+        font-weight: lighter;
+        line-height: 6.2rem;
+    }
+}
+.container__information--paragraph {
+    color: variables.$color-light-grey;
+    @include mixins.breakpoint(mobile) {
+        font-size: 1.5rem;
+        font-weight: lighter;
+        line-height: 2.5rem;
+    }
+    @include mixins.breakpoint(tablet) {
+        font-size: 1.8rem;
+        font-weight: lighter;
+        line-height: 2.8rem;
+    }
+    @include mixins.breakpoint(desktop) {
+        font-size: 1.8rem;
+        font-weight: lighter;
+        line-height: 2.8rem;
+    }
+}
